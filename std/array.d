@@ -3561,7 +3561,7 @@ if (isDynamicArray!A)
      * Use opSlice() from now on.
      * Returns: The managed array.
      */
-    @property inout(T)[] data() inout @trusted
+    @property inout @trusted inout(T)[] data()
     {
         return this[];
     }
